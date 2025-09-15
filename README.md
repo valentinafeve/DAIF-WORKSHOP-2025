@@ -1,4 +1,4 @@
-# 🧠 Workshop: Lab 03 - Oracle Generative AI + LangChain Agent
+# 🧠 Workshop: Lab 02 - Oracle Generative AI + LangChain Agent
 
 Este repositorio contiene un **notebook interactivo** para aprender a:
 - Conectar con **OCI Generative AI** desde Python.
