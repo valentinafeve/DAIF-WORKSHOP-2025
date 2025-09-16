@@ -73,10 +73,25 @@ Instalar el paquete de n8n-nodes-oracle-cloud
 
 ## 📸 Guía Paso a Paso
 
+A continuación se detallan los pasos para construir el siguiente workflow, el cuál está dividido en wl workflow de vectorización de archivos y el workflow de chat.
+
+A continuación es posible encontrar una guía en portugués con subtítulos 
+
+[![](./screenshots/n8n_thumbnail.png)](https://youtu.be/f0p52rJ7yd0)
+![](https://youtu.be/f0p52rJ7yd0)
+
+El propósito de este notebook es implementar el siguiente workflow.
+
+![n8n_workflow](./screenshots/n8n_flow.png)
+
+
 ### 🔤 Workflow para Subir Archivos 
 Crear workflow para subir archivos y usarlos como Knowledge Base:
 
 #### 1. Inicio del workflow 
+
+Para iniciar el workflow, crearemos el nodo con la siguiente información.
+
 * Nodo: "On form submission"
 * Configuración: Form para subir archivos con campo "Subir archivos"
 * Elementos: File upload field, accepted file types (.jpg, .png), multiple files enabled
@@ -95,9 +110,15 @@ Crear workflow para subir archivos y usarlos como Knowledge Base:
 * Port:
 * Service Name:
 
+El llenado de campos se puede hacer a partir del contenido de algún *Connection string*, disponible en la sección *Database Connection*
+
 ![Procesamiento archivos](screenshots/5.a.jpeg)
 
-* Table Name: prueba_demos_chile
+![Connection String](screenshots/5.b.png)
+
+Recomendamos usar el Conenction String medium.
+
+* Table Name: prueba_demos
 * Clear Table: Activado (limpia tabla antes de insertar)
 * Propósito: Insertar documentos procesados en la base de datos vectorial
 
@@ -145,11 +166,6 @@ Pasos completos para crear un agente IA con su propia base de datos:
 ![Tools Config](screenshots/10.jpeg)
 
 ![Tools Config](screenshots/12.jpeg)
-
-
-
-
-
 
 
 ## 📚 Recursos Adicionales
